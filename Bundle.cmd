@@ -12,4 +12,5 @@
  "C:\Projects\Substitute\packages\WebSharper.3.6.14.237\lib\net40\WebSharper.Web.dll"^
  "C:\Projects\Substitute\packages\WebSharper.UI.Next.3.6.15.211\lib\net40\WebSharper.UI.Next.dll"^
  "C:\Projects\Substitute\packages\WebSharper.UI.Next.3.6.15.211\lib\net40\WebSharper.UI.Next.Templating.dll"^
- "C:\Projects\Substitute\Substitute.Two\bin\Debug\Substitute.Two.dll"
+ "C:\Projects\Substitute\Substitute.One\bin\Debug\Substitute.One.dll"^
+ "C:\Projects\Substitute\Substitute\bin\Substitute_cp.dll"

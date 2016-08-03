@@ -15789,7 +15789,7 @@ var JSON;JSON||(JSON={}),function(){"use strict";function i(n){return n<10?"0"+n
     page:Runtime.Field(function()
     {
      var arg20;
-     arg20=List.ofArray([Doc.TextNode("Page - Two")]);
+     arg20=List.ofArray([Doc.TextNode("Page - One")]);
      return Doc.Element("div",[],arg20);
     })
    }
@@ -15807,6 +15807,34 @@ var JSON;JSON||(JSON={}),function(){"use strict";function i(n){return n<10?"0"+n
  Runtime.OnLoad(function()
  {
   Root.page();
+  return;
+ });
+}());
+
+(function()
+{
+ var Global=this,Runtime=this.IntelliFactory.Runtime,UI,Next,Doc,Substitute,Client;
+ Runtime.Define(Global,{
+  Substitute:{
+   Client:{
+    Main:Runtime.Field(function()
+    {
+     return Doc.RunById("main",Substitute.Root.page());
+    })
+   }
+  }
+ });
+ Runtime.OnInit(function()
+ {
+  UI=Runtime.Safe(Global.WebSharper.UI);
+  Next=Runtime.Safe(UI.Next);
+  Doc=Runtime.Safe(Next.Doc);
+  Substitute=Runtime.Safe(Global.Substitute);
+  return Client=Runtime.Safe(Substitute.Client);
+ });
+ Runtime.OnLoad(function()
+ {
+  Client.Main();
   return;
  });
 }());

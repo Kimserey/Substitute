@@ -1,3 +1,5 @@
+REM Last two params are the input dll and output dll
+
 "C:\Projects\Substitute\packages\WebSharper.3.6.14.237\tools\net40\WebSharper.exe"^
  -r "C:\Projects\Substitute\packages\WebSharper.3.6.14.237\lib\net40\WebSharper.Core.JavaScript.dll"^
  -r "C:\Projects\Substitute\packages\WebSharper.3.6.14.237\lib\net40\WebSharper.Collections.dll"^
