@@ -61,6 +61,7 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Numerics" />
+    <Reference Include="System.Runtime.Caching" />
     <Reference Include="System.Web" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
@@ -108,10 +109,25 @@
       <HintPath>..\packages\WebSharper.3.6.14.237\lib\net40\WebSharper.Sitelets.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="WebSharper.UI.Next">
+      <HintPath>..\packages\WebSharper.UI.Next.3.6.15.211\lib\net40\WebSharper.UI.Next.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WebSharper.UI.Next.Templating">
+      <HintPath>..\packages\WebSharper.UI.Next.3.6.15.211\lib\net40\WebSharper.UI.Next.Templating.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="WebSharper.Web">
       <HintPath>..\packages\WebSharper.3.6.14.237\lib\net40\WebSharper.Web.dll</HintPath>
       <Private>True</Private>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Substitute.One\Substitute.One.fsproj">
+      <Name>Substitute.One</Name>
+      <Project>{894f4c06-6646-4cfa-ad27-5cd53eacb39b}</Project>
+      <Private>True</Private>
+    </ProjectReference>
   </ItemGroup>
   <Target Name="IncludeContent" BeforeTargets="Compile">
     <ItemGroup>
