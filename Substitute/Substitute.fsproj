@@ -122,13 +122,6 @@
       <Private>True</Private>
     </Reference>
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Substitute.One\Substitute.One.fsproj">
-      <Name>Substitute.One</Name>
-      <Project>{894f4c06-6646-4cfa-ad27-5cd53eacb39b}</Project>
-      <Private>True</Private>
-    </ProjectReference>
-  </ItemGroup>
   <Target Name="IncludeContent" BeforeTargets="Compile">
     <ItemGroup>
       <Content Include="Content/*.*" />

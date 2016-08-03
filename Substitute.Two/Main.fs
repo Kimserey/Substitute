@@ -7,4 +7,4 @@ open WebSharper.UI.Next.Html
 module Root =
     
     let page =
-        div [ text "Page - Two" ]
+        h1 [ text "This is the second instance" ]

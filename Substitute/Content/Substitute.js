@@ -15782,37 +15782,6 @@ var JSON;JSON||(JSON={}),function(){"use strict";function i(n){return n<10?"0"+n
 ;
 (function()
 {
- var Global=this,Runtime=this.IntelliFactory.Runtime,List,UI,Next,Doc,Substitute,Root;
- Runtime.Define(Global,{
-  Substitute:{
-   Root:{
-    page:Runtime.Field(function()
-    {
-     var arg20;
-     arg20=List.ofArray([Doc.TextNode("Page - One")]);
-     return Doc.Element("div",[],arg20);
-    })
-   }
-  }
- });
- Runtime.OnInit(function()
- {
-  List=Runtime.Safe(Global.WebSharper.List);
-  UI=Runtime.Safe(Global.WebSharper.UI);
-  Next=Runtime.Safe(UI.Next);
-  Doc=Runtime.Safe(Next.Doc);
-  Substitute=Runtime.Safe(Global.Substitute);
-  return Root=Runtime.Safe(Substitute.Root);
- });
- Runtime.OnLoad(function()
- {
-  Root.page();
-  return;
- });
-}());
-
-(function()
-{
  var Global=this,Runtime=this.IntelliFactory.Runtime,UI,Next,Doc,Substitute,Client;
  Runtime.Define(Global,{
   Substitute:{
@@ -15835,6 +15804,37 @@ var JSON;JSON||(JSON={}),function(){"use strict";function i(n){return n<10?"0"+n
  Runtime.OnLoad(function()
  {
   Client.Main();
+  return;
+ });
+}());
+
+(function()
+{
+ var Global=this,Runtime=this.IntelliFactory.Runtime,List,UI,Next,Doc,Substitute,Root;
+ Runtime.Define(Global,{
+  Substitute:{
+   Root:{
+    page:Runtime.Field(function()
+    {
+     var arg20;
+     arg20=List.ofArray([Doc.TextNode("This is the second instance")]);
+     return Doc.Element("h1",[],arg20);
+    })
+   }
+  }
+ });
+ Runtime.OnInit(function()
+ {
+  List=Runtime.Safe(Global.WebSharper.List);
+  UI=Runtime.Safe(Global.WebSharper.UI);
+  Next=Runtime.Safe(UI.Next);
+  Doc=Runtime.Safe(Next.Doc);
+  Substitute=Runtime.Safe(Global.Substitute);
+  return Root=Runtime.Safe(Substitute.Root);
+ });
+ Runtime.OnLoad(function()
+ {
+  Root.page();
   return;
  });
 }());

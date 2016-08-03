@@ -10,8 +10,8 @@ open WebSharper.UI.Next.Html
 module Client =
     
     [<Inline "Substitute.Root.page()">]
-    let test = X<Doc>
+    let page = X<Doc>
 
     let Main =
-        test
+        page
         |> Doc.RunById "main"
